@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 5 - Desain UI/UX Pemrograman Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        /* Header Wireframe */
+        .site-header {
+            background: #e0e0e0;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .site-header .logo-area {
+            font-weight: bold;
+            font-size: 14px;
+            color: #555;
+        }
+        .main-title {
+            text-align: center;
+            padding: 20px 0 10px 0;
+        }
+        .main-title h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #2c3e50;
+        }
+        .main-title p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+        /* Intro Section */
+        .intro-section {
+            margin: 15px 20px;
+            padding: 10px 15px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+        /* Members Grid */
+        .members-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        .member-card {
+            border: 1px solid #ccc;
+            background: #fff;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .member-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        .member-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .btn-profile {
+            background: #e0e0e0;
+            border: 1px solid #b0b0b0;
+            padding: 3px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .member-content {
+            display: flex;
+            gap: 15px;
+        }
+        .photo-placeholder {
+            width: 100px;
+            height: 120px;
+            background: #e9e9e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            font-size: 12px;
+            color: #666;
+            flex-shrink: 0;
+        }
+        .biodata-list {
+            font-size: 13px;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+        .biodata-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .biodata-list td {
+            padding: 2px 0;
+            vertical-align: top;
+        }
+        .biodata-list td.label {
+            width: 70px;
+            color: #555;
+        }
+        /* Footer Wireframe */
+        .site-footer {
+            background: #e0e0e0;
+            text-align: center;
+            padding: 12px;
+            font-size: 13px;
+            color: #555;
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+        }
+        /* Card ke-5 agar berada di tengah */ 
+        .member-card.center-card {
+            grid-column: 1 / -1; 
+            max-width: 500px;    
+            margin: 0 auto;      
+            width: 100%;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Main Title -->
+        <div class="main-title">
+            <h1>Kelompok 5</h1>
+            <p>Desain UI/UX & Pemrograman Web</p>
+        </div>
+
+        <!-- Intro -->
+        <div class="intro-section">
+
+           <p style="text-align: center;"
+           >Selamat datang di website kelompok 5. Berikut adalah biodata anggota dari kelompok 5.</p>
+        </div>
+
+        <!-- Members Grid (5 Anggota) -->
+        <div class="members-grid">
+            <!-- Anggota 1 -->
+            <div class="member-card">
+                <div class="member-header">
+                    <span class="member-name">Arif Fiqri Risqullah</span>
+                </div>
+
+                <div class="member-content">
+                    <div class="photo-placeholder">
+                        <img src="assets/img/arif.jpeg" alt="Foto Profil" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="biodata-list">
+                        <table>
+                            <tr><td class="label">NIM</td><td>: 0110226067</td></tr>
+                            <tr><td class="label">Prodi</td><td>: Teknik Informatika</td></tr>
+                            <tr><td class="label">TTL</td><td>: Depok, 15 November 2007</td></tr>
+                            <tr><td class="label">Alamat</td><td>: Kelapa dua, Depok</td></tr>
+                            <tr><td class="label">No Telpon</td><td>: 085882657403</td></tr>
+                            <tr><td class="label">Hobi</td><td>: Travelling</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anggota 2 -->
+            <div class="member-card">
+                <div class="member-header">
+                     <span class="member-name">Ariq Fadhlurahman Al Ghiffari</span>
+                </div>
+
+                <div class="member-content">
+                    <div class="photo-placeholder">
+                        <img src="assets/img/ariq.jpeg" alt="Foto Profil" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="biodata-list">
+                        <table>
+                            <tr><td class="label">NIM</td><td>: 0110226066</td></tr>
+                            <tr><td class="label">Prodi</td><td>: Teknik Informatika</td></tr>
+                            <tr><td class="label">TTL</td><td>: Depok, 19 Juni 2008</td></tr>
+                            <tr><td class="label">Alamat</td><td>: Cimanggis, Depok</td></tr>
+                            <tr><td class="label">No Telpon</td><td>: 089530824879</td></tr>
+                            <tr><td class="label">Hobi</td><td>: Main game</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anggota 3 -->
+            <div class="member-card">
+                <div class="member-header">
+                     <span class="member-name">Aulia Nur Fatihah</span>
+                </div>
+
+                <div class="member-content">
+                    <div class="photo-placeholder">
+                        <img src="assets/img/Aulia Nur Fatihah.jpeg" alt="Foto Profil" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="biodata-list">
+                        <table>
+                            <tr><td class="label">NIM</td><td>: 0110226111</td></tr>
+                            <tr><td class="label">Prodi</td><td>: Teknik Informatika</td></tr>
+                            <tr><td class="label">TTL</td><td>: Jakarta, 03 November 2006</td></tr>
+                            <tr><td class="label">Alamat</td><td>: Cileungsi, Bogor</td></tr>
+                            <tr><td class="label">No Telpon</td><td>: 085714804817</td></tr>
+                            <tr><td class="label">Hobi</td><td>: Mendengarkan musik</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anggota 4 -->
+            <div class="member-card">
+                <div class="member-header">
+                    <span class="member-name">Aulia Safitri</span>
+                </div>
+                <div class="member-content">
+                    <div class="photo-placeholder">
+                        <img src="assets/img/Aulia Safitri.jpeg" alt="Foto Profil" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="biodata-list">
+                        <table>
+                            <tr><td class="label">NIM</td><td>: 0110226110</td></tr>
+                            <tr><td class="label">Prodi</td><td>: Teknik Informatika</td></tr>
+                            <tr><td class="label">TTL</td><td>: Jakarta 29 juni 2006</td></tr>
+                            <tr><td class="label">Alamat</td><td>: CItayem Bogor</td></tr>
+                            <tr><td class="label">No Telpon</td><td>: 085161469095</td></tr>
+                            <tr><td class="label">Hobi</td><td>: Mendengarkan musik</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Anggota 5 -->
+            <div class="member-card center-card">
+                <div class="member-header">
+                    <span class="member-name"> Berliana Dinda Tirani</span>
+                </div>
+                <div class="member-content">
+                    <div class="photo-placeholder">
+                        <img src="assets/img/berlin.jpeg" alt="Foto Profil" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="biodata-list">
+                        <table>
+                            <tr><td class="label">NIM</td><td>: 0110226135</td></tr>
+                            <tr><td class="label">Prodi</td><td>: Teknik Informatika</td></tr>
+                            <tr><td class="label">TTL</td><td>: Depok, 05 Juli 2007</td></tr>
+                            <tr><td class="label">Alamat</td><td>: Palsigunung, Cimanggis Depok</td></tr>
+                            <tr><td class="label">No Telpon</td><td>: 085211654337</td></tr>
+                            <tr><td class="label">Hobi</td><td>: Konten kreator digital dan traveling</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Footer -->
+        <div class="site-footer">
+            Footer - &copy; 2026 Kelompok 5 UI & UX Desainer - TI01
+            
+        </div>
+    </div>
+
+</body>
+</html>
